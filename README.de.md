@@ -5,7 +5,7 @@ Das AddOn vhs dient dazu, xml Dateien mit Kursinformationen aus Kufer VHS in YFo
 
 Das AddOn bietet die Möglichkeit Kurse auf REDAXO Seiten anzuzeigen und zu buchen. Es wird eine XML Buchungsdatei erstellt, die von der Kufer Verwaltungssoftware importiert werden kann.
 
-Der Autor des AddOns steht in keiner Verbindung zu Firma Kufer.
+Wichtige Info: der Autor des AddOns steht in keiner Verbindung zu Firma Kufer.
 
 Das AddOn kommt gänzlich ohne Templates, Styles und Javascript und auch weitestgehend ohen Frontend Funktionalität. Das hat natürlich auch einen Grund. Die Installation, für die dieses AddOn programmiert wurde, ist für den speziellen Anwendungsfall programmiert und konfiguriert, mit Javascript, Frontend und allem umgesetzt und verzahnt. Diese Installation kann ich aus gutem Grund nicht zur Verfügung stellen. So habe ich mich ein paar Stunden dran gesetzt, zumindest die rudimentäre Funktion für die Allgemeinheit verfügbar zu machen. Diese Funktion ist auch rudimentär bis zur Kursanzeige getestet. Mehr aber auch nicht! Die Fragmente und der Frontend Ausgabecode ist für das Framework Ui-Kit geschrieben. Andere Entwickler benutzen andere Frameworks. In diesem Falle können die Fragmente selbst umgeschrieben werden. Mir ist dieser Hinweis sehr wichtig, denn gelegentlich kommt von unbedarften Anwendern der Kommentar "das funktioniert ja gar nicht!". In diesem Falle hilft: selbst Hand anlegen. Oder fragt einen Entwickler, der euch diese Arbeit abnimmt.
 
@@ -89,3 +89,9 @@ Für den automatischen Import der Kufer xml Datei kann ein Cronjob eingerichtet 
 Es wird empfohlen die Import über einen echten Cronjob zu starten. Damit ist gewährleistet, dass der Import auch unabhängig von einem Seitenaufruf im Frontend oder im Backend läuft.
 
 Der Aufruf muss lauten: php redaxo/bin/console vhs:import
+
+
+Tipps und Tricks
+----------------
+
+Für Entwickler möglicherweise interessant: im AddOn ist eine neue Idee verbaut, wie sich Module, E-Mail Templates und ggf. auch Templates im AddOn installieren lassen. Schaut euch einfach die Datei `pages/setup.php` an. Mit dieser Methode können die Module nach der Entwicklung einfach aus dem theme Verzeichnis nach `install/` kopiert werden.
