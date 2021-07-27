@@ -1,0 +1,7 @@
+name: vhs_anmeldung_bestaetigung
+mail_from: kursanmeldung@weiterbildungszentrum-mustermann.de
+mail_from_name: 'Weiterbildungszentrum Mustermann'
+mail_reply_to: kursanmeldung@weiterbildungszentrum-mustermann.de
+mail_reply_to_name: ''
+subject: 'Eingangsbestätigung Ihrer Anmeldung zum Kurs REX_YFORM_DATA[field="kurs_title"] für den REX_YFORM_DATA[field="kurs_zeitraum"]'
+attachments: ''

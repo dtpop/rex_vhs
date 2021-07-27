@@ -1,0 +1,27 @@
+package: vhs
+version: dev
+author: Wolfgang Bund
+supportpage: www.redaxo.org/de/forum/
+
+requires:
+    redaxo: '^5.10'
+    packages:
+        yform: '^3.2'
+
+page:
+    title: 'VHS'
+    pjax: true
+    icon: rex-icon rex-icon-language
+    subpages:
+        import:
+            title: 'Import'
+        settings:
+            title: 'Einstellungen'
+            perm: admin[]
+        setup:
+            title: 'Setup'
+            perm: admin[]
+
+console_commands:
+    vhs:import: vhs_run_import
+
